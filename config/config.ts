@@ -1,3 +1,5 @@
+import { CodeSnippetsProps } from "@/components/EditorComponent";
+
 export const languageOptions = [
   {
     language: "javascript",
@@ -60,7 +62,7 @@ export const languageOptions = [
   },
 ];
 
-export const codeSnippets = {
+export const codeSnippets: CodeSnippetsProps = {
   javascript: `function sum(a, b) {
   return a + b;
 }

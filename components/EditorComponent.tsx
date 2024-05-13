@@ -16,7 +16,9 @@ import { Loader, Play, TriangleAlert } from "lucide-react";
 import { codeSnippets, languageOptions } from "@/config/config";
 import { compileCode } from "@/actions/compile";
 import toast from "react-hot-toast";
-
+export interface CodeSnippetsProps {
+  [key: string]: string;
+}
 export default function EditorComponent() {
   const { theme } = useTheme();
   const [sourceCode, setSourceCode] = useState(codeSnippets["javascript"]);
